@@ -4,8 +4,18 @@
     <link rel="stylesheet" href="popup.css" />
   </head>
   <body>
-    <div>chorus Id : https://go.chorus.ai/<span id="chorusURL"></span></div>
-    <button id="go-to-options">Options</button>
+    <div id="viewChorusId" class="hideme">
+      <div>Chorus URL: https://go.chorus.ai/ <span id="chorusURL"></span></div>
+      <div><button id="editChorusBtn">edit</button></div>
+    </div>
+    <div id="editChorusId" class="hideme">
+      <p>Enter your Chorus Id.</p>
+      <div id="chorusId">https://go.chorus.ai/<input type="text" id="chorusInput" /></div>
+      <div>
+        <button id="cancelChorusBtn">cancel</button>
+        <button id="saveChorusBtn">save</button>
+      </div>
+    </div>
     <script src="popup.js"></script>
   </body>
 </html>

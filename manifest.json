@@ -1,15 +1,12 @@
 {
-  "name": "Chorus Scheduler",
-  "description": "Add your Chorus link to a Google Calendar meeting.",
+  "name": "Chorus.ai Scheduler",
+  "description": "Add your chorus.ai link to a Google Calendar meeting.",
   "version": "1.0",
   "manifest_version": 3,
   "background": {
     "service_worker": "background.js"
   },
   "permissions": ["storage", "activeTab", "scripting", "webNavigation"],
-  "options_ui": {
-    "page": "options.html"
-  },
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
