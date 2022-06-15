@@ -143,6 +143,13 @@ const setEventListeners = () => {
 // @todo add button to popup window when adding/ editing event
 chrome.runtime.onMessage.addListener(function (request) {
   if (request.execute_addChorusButtonToEvent == true) {
-    addChorusButtonToEvent(0);
+    // Check for a chorus id being set.
+    chrome.storage.sync.get('chorusId', ({ chorusId }) => {
+      if (chorusId === '') {
+        console.error('There is no ChorusId set. Please save it in the Chorus Scheduler extension settings');
+        return;
+      }
+      addChorusButtonToEvent(0);
+    });
   }
 });
