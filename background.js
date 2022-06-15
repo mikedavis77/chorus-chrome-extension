@@ -5,7 +5,7 @@ chrome.runtime.onInstalled.addListener(() => {
   });
 });
 
-chrome.webNavigation.onHistoryStateUpdated.addListener(function (details) {
+const addListenerForGoogleCalendar = (details) => {
   if (/calendar.google.com.*\/eventedit[^/]*/i.test(details.url)) {
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
       chrome.tabs.sendMessage(tabs[0].id, {
@@ -13,4 +13,7 @@ chrome.webNavigation.onHistoryStateUpdated.addListener(function (details) {
       });
     });
   }
-});
+};
+
+chrome.webNavigation.onCompleted.addListener((details) => addListenerForGoogleCalendar(details));
+chrome.webNavigation.onHistoryStateUpdated.addListener((details) => addListenerForGoogleCalendar(details));
