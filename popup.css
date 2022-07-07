@@ -1,6 +1,6 @@
 body {
   width: 350px;
-  height: 120px;
+  height: 150px;
   padding: 5px;
 }
 
@@ -15,8 +15,34 @@ button {
   border: none;
   border-radius: 2px;
   padding: 6px 10px;
+  background-color: #2171ff;
+  color: #ffffff;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 button.current {
   box-shadow: 0 0 0 2px white, 0 0 0 4px black;
+}
+
+button#addToLiveCall {
+  margin: 25px 0 0 0;
+}
+
+.header {
+  display: flex;
+}
+
+.header img {
+  height: 44px;
+  width: 44px;
+}
+
+.company-name {
+  font-size: 24px;
+  display: flex;
+  margin-left: 6px;
+  align-items: center;
 }

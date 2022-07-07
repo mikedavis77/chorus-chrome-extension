@@ -36,6 +36,10 @@ document.querySelector('#cancelChorusBtn').addEventListener('click', () => {
   editChorusEl.classList.add('hideme');
 });
 
+document.querySelector('#addToLiveCall').addEventListener('click', () => {
+  window.open('https://chorus.ai/record');
+});
+
 function setChorusIdDisplayValue(chorusId) {
   myChorusId = chorusId;
   chorusUrl.innerHTML = chorusId;
