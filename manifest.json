@@ -10,17 +10,17 @@
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "/images/chorus16.png",
-      "32": "/images/chorus32.png",
-      "48": "/images/chorus48.png",
-      "128": "/images/chorus128.png"
+      "16": "/images/icons/chorus16.png",
+      "32": "/images/icons/chorus32.png",
+      "48": "/images/icons/chorus48.png",
+      "128": "/images/icons/chorus128.png"
     }
   },
   "icons": {
-    "16": "/images/chorus16.png",
-    "32": "/images/chorus32.png",
-    "48": "/images/chorus48.png",
-    "128": "/images/chorus128.png"
+    "16": "/images/icons/chorus16.png",
+    "32": "/images/icons/chorus32.png",
+    "48": "/images/icons/chorus48.png",
+    "128": "/images/icons/chorus128.png"
   },
   "content_scripts": [
     {
