@@ -1,8 +1,4 @@
 const addChorusButtonToEvent = (callCount = 0) => {
-  if (!/calendar.google.com.*\/eventedit[^/]*/i.test(window.location.toString())) {
-    return;
-  }
-
   const zoomBtnContainer = document.querySelector('.zoom-video-sec');
   // DOM loading might be delayed, so retry 10 times with some backoff.
   if (callCount < 10 && zoomBtnContainer === null) {
