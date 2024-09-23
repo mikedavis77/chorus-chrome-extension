@@ -9,6 +9,7 @@ This extension assumes you have the Zoom Scheduler Chrome extension already inst
 This is currently a dev only version of this extension, so it will need to be manually added to your extensions list.
 
 - Download the zip file of the [latest release](https://github.com/mikedavis77/chorus-chrome-extension/releases) to your local machine
+  - Or checkout the latest release to your local machine using git
 - Unzip the file to a directory
 - Navigate to your Chrome extensions - `chrome://extensions`
 - Enable 'Developer mode' (toggle top right hand corner)
@@ -16,6 +17,22 @@ This is currently a dev only version of this extension, so it will need to be ma
 - Select the directory that you have unzipped the zip file to
 - Enable the extension
 - You should see the 'Chorus.ai Scheduler' in the list of extensions
+
+## Updating an installed version
+
+When updates are released for this extension to fix bugs or make improvements the following guidelines can be used to update you local version:
+
+- If you had checked out the latest release through git:
+  - Run `git pull` on your directory to get the most up to date version
+    or
+  - checkout the latest tag ` git checkout [latest tag number]`
+- If you had downloaded the latest release:
+
+  - Follow the steps for installing, but once you have unpacked the directory copy the contents of the files to your original directory
+
+- Once you have updated the local copy:
+  - Navigate to your Chrome extensions - `chrome://extensions`
+  - Click on the update icon on the Chorus.ai Scheduler extension
 
 # How to use this extension?
 
